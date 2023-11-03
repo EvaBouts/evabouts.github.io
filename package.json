@@ -1,0 +1,26 @@
+{
+  "name": "evabouts.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EvaBouts/evabouts.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EvaBouts/evabouts.github.io/issues"
+  },
+  "homepage": "https://github.com/EvaBouts/evabouts.github.io#readme",
+  "devDependencies": {
+    "parcel": "^2.10.2"
+  },
+  "source": "src/index.html",
+    "scripts": {
+      "start": "parcel",
+      "build": "parcel build"
+    }
+}

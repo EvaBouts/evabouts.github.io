@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EvaBouts/evabouts.github.io.git"
@@ -16,11 +15,12 @@
   },
   "homepage": "https://github.com/EvaBouts/evabouts.github.io#readme",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.2",
     "parcel": "^2.10.2"
   },
   "source": "src/index.html",
-    "scripts": {
-      "start": "parcel",
-      "build": "parcel build"
-    }
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  }
 }

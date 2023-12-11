@@ -1,0 +1,71 @@
+@use "../vars";
+@use "../mixin";
+
+.right {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+
+    &__h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        margin-top: 4rem;
+        text-transform: uppercase;
+    }
+}
+
+.card {
+    &__title {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+
+    &__dates {
+        font-weight: bold;
+    }
+
+    &__titledate {
+        display: flex;
+        flex-direction: row;
+        margin-right: 4rem;
+        justify-content: space-between;
+    }
+
+    &__img {
+        border-radius: 0.8rem;
+        margin: 1.2rem 0;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 1.5rem 0;
+    }
+
+    &__item {
+        font-weight: 700;
+        border: 1px solid vars.$btn-bg-color;
+        border-radius: 1rem;
+        background-color: vars.$btn-bg-color;
+        padding: 0.4rem;
+        color: vars.$btn-txt-color;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .card {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: flex-start;
+
+        &__img{
+            max-width: 30%;
+            margin:0;
+        }
+    }
+}

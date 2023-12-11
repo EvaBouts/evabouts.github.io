@@ -1,0 +1,34 @@
+@use "./vars";
+@use "./mixin";
+@use "./fonts";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-size: 62.5%;
+    line-height: 1.4;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    background-color: vars.$bg-color;
+    color: vars.$main-color;
+    margin: 1.5rem;
+}
+
+img {
+    max-width: 150%;
+}
+
+.em {
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
